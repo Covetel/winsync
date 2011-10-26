@@ -1,0 +1,133 @@
+
+Microsoft (R) Program Maintenance Utility Version 9.00.21022.08
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	cd passwordsync
+	build.bat
+The syntax of the command is incorrect.
+Build flavor is WINNT5.2_OPT.OBJ
+A subdirectory or file C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ already exists.
+-------- Beginning PassSync Build --------
+Build flavor is passsync - Win32 Release
+	if not exist "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\passsync/" mkdir "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\passsync"
+	cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\nm32.tmp
+ntservice.cpp
+.\ntservice.cpp(81) : warning C4996: '_tcsncpy': This function or variable may be unsafe. Consider using _tcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\tchar.h(1518) : see declaration of '_tcsncpy'
+.\ntservice.cpp(207) : warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\string.h(74) : see declaration of 'strcpy'
+.\ntservice.cpp(208) : warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\string.h(79) : see declaration of 'strcat'
+.\ntservice.cpp(579) : warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\stdio.h(366) : see declaration of 'sprintf'
+.\ntservice.cpp(582) : warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\stdio.h(366) : see declaration of 'vsprintf'
+.\ntservice.cpp(584) : warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\string.h(79) : see declaration of 'strcat'
+service.cpp
+subuniutil.cpp
+syncserv.cpp
+Setting up manifest...
+processorArchitecture=x86
+Microsoft.VC90.CRT=9.0.21022.8
+.\syncserv.cpp(174) : warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\stdio.h(358) : see declaration of '_snprintf'
+.\syncserv.cpp(175) : warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\stdio.h(358) : see declaration of '_snprintf'
+.\syncserv.cpp(176) : warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\stdio.h(358) : see declaration of '_snprintf'
+.\syncserv.cpp(564) : warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\stdio.h(358) : see declaration of '_snprintf'
+Generating Code...
+	cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\nm33.tmp
+passhand.cpp
+..\passhand.cpp(53) : warning C4996: '_strdate': This function or variable may be unsafe. Consider using _strdate_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\time.h(188) : see declaration of '_strdate'
+..\passhand.cpp(54) : warning C4996: '_strtime': This function or variable may be unsafe. Consider using _strtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\time.h(192) : see declaration of '_strtime'
+	link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\nm34.tmp
+	if exist "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\passsync\passsync.exe".manifest mt.exe -manifest "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\passsync\passsync.exe".manifest -outputresource:"C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\passsync\passsync.exe";1
+Microsoft (R) Manifest Tool version 5.2.3790.2075
+Copyright (c) Microsoft Corporation 2005. 
+All rights reserved.
+-------- PassSync Build Successful! --------
+-------- Beginning Passhook Build --------
+	if not exist "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\passhook/" mkdir "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\passhook"
+	cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\nm38.tmp
+passhand.cpp
+..\passhand.cpp(53) : warning C4996: '_strdate': This function or variable may be unsafe. Consider using _strdate_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\time.h(188) : see declaration of '_strdate'
+..\passhand.cpp(54) : warning C4996: '_strtime': This function or variable may be unsafe. Consider using _strtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\time.h(192) : see declaration of '_strtime'
+	cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\nm39.tmp
+passhook.cpp
+.\passhook.cpp(82) : warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\stdio.h(358) : see declaration of '_snprintf'
+.\passhook.cpp(85) : warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+        C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\stdio.h(358) : see declaration of '_snprintf'
+	link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\nm3A.tmp
+   Creating library C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\passhook\passhook.lib and object C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\passhook\passhook.exp
+-------- Passhook Build Successful! --------
+-------- Beginning Packaging --------
+	copy /Y "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\passsync\passsync.exe" "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\package\passsync"
+        1 file(s) copied.
+	copy /Y "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\passhook\passhook.dll" "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\package\passsync"
+        1 file(s) copied.
+	copy /Y "C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\ldapsdk\lib\*.dll" "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\package\passsync"
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\ldapsdk\lib\nsldap32v60.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\ldapsdk\lib\nsldappr32v60.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\ldapsdk\lib\nsldapssl32v60.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\ldapsdk\lib\nsldif32v60.dll
+        4 file(s) copied.
+	copy /Y "C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nspr\lib\*.dll" "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\package\passsync"
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nspr\lib\libnspr4.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nspr\lib\libplc4.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nspr\lib\libplds4.dll
+        3 file(s) copied.
+	copy /Y "C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\lib\*.dll" "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\package\passsync"
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\lib\freebl3.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\lib\libnspr4.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\lib\libplc4.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\lib\libplds4.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\lib\nss3.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\lib\nssckbi.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\lib\nssdbm3.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\lib\nssutil3.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\lib\smime3.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\lib\softokn3.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\lib\sqlite3.dll
+C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\lib\ssl3.dll
+       12 file(s) copied.
+	copy /Y "C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\bin\certutil.exe" "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\package\passsync"
+        1 file(s) copied.
+	copy /Y "C:\winsync-1.1.4\components\WINNT5.2_OPT.OBJ\nss\bin\pk12util.exe" "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\package\passsync"
+        1 file(s) copied.
+	if not exist "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\package\passsync\Binary" mkdir "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\package\passsync\Binary"
+	copy /Y wix\Binary "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\package\passsync\Binary"
+wix\Binary\Banner.bmp
+wix\Binary\Complete.ico
+wix\Binary\Custom.ico
+wix\Binary\Dialog.bmp
+wix\Binary\Exclam.ico
+wix\Binary\Info.ico
+wix\Binary\License.rtf
+wix\Binary\New.ico
+wix\Binary\Remove.ico
+wix\Binary\Repair.ico
+wix\Binary\Typical.ico
+wix\Binary\Up.ico
+       12 file(s) copied.
+	cd "C:\winsync-1.1.4\built\WINNT5.2_OPT.OBJ\package\passsync"
+	"C:\winsync-1.1.4\wix\candle" "-dCRTMSM=C:\Program Files\Common Files\Merge Modules\Microsoft_VC90_CRT_x86.msm" "-dPOLICYCRTMSM=C:\Program Files\Common Files\Merge Modules\policy_9_0_Microsoft_VC90_CRT_x86.msm" -dVERSION=1.1.4 -dUSE64= "-dBRAND=389" "-dVENDOR=389 Project" "C:\winsync-1.1.4\passwordsync\wix\PassSync.wxs"
+Microsoft (R) Windows Installer Xml Compiler version 2.0.5805.0
+Copyright (C) Microsoft Corporation 2003. All rights reserved.
+
+PassSync.wxs
+	"C:\winsync-1.1.4\wix\light" PassSync.wixobj -out 389-PassSync-1.1.4-i386.msi
+Microsoft (R) Windows Installer Xml Linker version 2.0.5805.0
+Copyright (C) Microsoft Corporation 2003. All rights reserved.
+
+        1 file(s) copied.
+-------- Packaging Successful! --------
+-------- Build Successful! --------
+	cd ..
