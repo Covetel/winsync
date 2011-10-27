@@ -40,6 +40,8 @@
 #include "hl_sha1wrapper.h"
 #include "hl_sha1.h"
 #include "hl_types.h"
+#include "base64.h"
+
 
 //---------------------------------------------------------------------- 
 //STL includes
@@ -59,7 +61,14 @@ std::string sha1wrapper::hashIt(void)
 	hl_uint8 Message_Digest[20];
 	sha1->SHA1Result(&context, Message_Digest);
 
-	return convToString(Message_Digest);
+    unsigned char *buff;
+    buff = Message_Digest;
+    std::string opt;
+    opt = base64_encode(buff, 20);
+    //return convToString(Message_Digest);
+    return opt;
+
+//	return convToString(Message_Digest);
 }
 
 /**

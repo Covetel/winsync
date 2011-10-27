@@ -1,0 +1,1 @@
+g++ -o pruebaSha1 ./src/*.cpp pruebaSha1.cpp
