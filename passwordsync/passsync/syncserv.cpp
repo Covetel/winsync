@@ -87,7 +87,7 @@
 #include "syncserv.h"
 #include <cstring>
 
-#include "./sha/base64.h"
+#include "base64.h"
 #include "prerror.h"
 static char* certdbh;
 

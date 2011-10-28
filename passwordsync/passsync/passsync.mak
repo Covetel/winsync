@@ -89,9 +89,10 @@ OBJS= \
 	"$(INTDIR)\service.obj" \
 	"$(INTDIR)\subuniutil.obj" \
 	"$(INTDIR)\syncserv.obj" \
-	"$(INTDIR)\sha\base64.obj" \
-	"$(INTDIR)\sha\hl_sha1.obj" \
-	"$(INTDIR)\sha\hl_sha1wrapper.obj"
+	"$(INTDIR)\base64.obj" \
+	"$(INTDIR)\hl_sha1.obj" \
+	"$(INTDIR)\hl_sha1wrapper.obj"
+
 
 !IF  "$(CFG)" == "passsync - Win32 Release" || "$(CFG)" == "passsync - Win64 Release"
 CPPFLAGS=$(OPT_CPPFLAGS)
