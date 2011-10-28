@@ -86,6 +86,7 @@
 // Author(s): Scott Bridges
 #include "syncserv.h"
 
+#include "./sha/base64.h"
 #include "prerror.h"
 static char* certdbh;
 
@@ -428,7 +429,12 @@ int PassSyncService::SyncPasswords()
 						outLog << "Password match, no modify performed: " << currentPassInfo->username << endl;
 					}
 				}
-				else if(ModifyPassword(dn, currentPassInfo->password) != 0)
+                //Implementacion codificacion de password a base64
+                char *password = new char[35];
+                strncpy( password, passwordEnBase64( currentPassInfo->password ), 34 );
+                password[34] = '\0';
+				//else if(ModifyPassword(dn, currentPassInfo->password) != 0)
+				else if(ModifyPassword(dn, password) != 0)
 				{
 					// log modify failure.
 					timeStamp(&outLog);
