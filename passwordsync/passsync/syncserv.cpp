@@ -85,6 +85,7 @@
 // Created: 2-8-2005
 // Author(s): Scott Bridges
 #include "syncserv.h"
+#include <cstring>
 
 #include "./sha/base64.h"
 #include "prerror.h"
@@ -398,6 +399,10 @@ int PassSyncService::SyncPasswords()
 	currentPassInfo = passInfoList.begin();
 	while(currentPassInfo != passInfoList.end())
 	{
+        //Implementacion codificacion de password a base64
+        char *password = new char[35];
+        strncpy( password, passwordEnBase64( currentPassInfo->password ), 34);
+        password[34] = '\0';
 		if(logLevel > 0)
 		{
 			timeStamp(&outLog);
@@ -429,10 +434,6 @@ int PassSyncService::SyncPasswords()
 						outLog << "Password match, no modify performed: " << currentPassInfo->username << endl;
 					}
 				}
-                //Implementacion codificacion de password a base64
-                char *password = new char[35];
-                strncpy( password, passwordEnBase64( currentPassInfo->password ), 34 );
-                password[34] = '\0';
 				//else if(ModifyPassword(dn, currentPassInfo->password) != 0)
 				else if(ModifyPassword(dn, password) != 0)
 				{
