@@ -147,13 +147,13 @@ if not defined CRTMSM (
 )
 
 if ["%BRAND%"] == [""] (
-   set BRAND=389
+   set BRAND=OpenLDAP
 )
 if ["%VENDOR%"] == [""] (
-   set VENDOR=389 Project
+   set VENDOR=Covetel R.S
 )
 if [%BRANDNOSPACE%] == [] (
-   set BRANDNOSPACE=389
+   set BRANDNOSPACE=OpenLDAP
 )
 if [%VERSION%] == [] (
    set VERSION=1.1.4-covetel
